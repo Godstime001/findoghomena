@@ -19,8 +19,6 @@ if(isset($_POST['submit'])){
             $headers .= 'From:<'.$email.'>' . "\r\n";
            $headers .= 'Cc: '.$email.'' . "\r\n";
              $headers .= 'Bcc: '.$name.'' . "\r\n";
-
-            mail("gtdevsolutions@gmail.com","git-project", $message, $headers);
             header("location: ../index.html?msg=success?");
 
           }

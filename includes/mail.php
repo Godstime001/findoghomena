@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 if(isset($_POST['submit'])){
-    if(empty($name) || empty($email) || empty($message)){
+    if(empty($name) || empty($email)  || empty($message)){
         header("location : ../index.html");
         exit();
     }else{
@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
            $headers .= 'Cc: '.$email.'' . "\r\n";
              $headers .= 'Bcc: '.$name.'' . "\r\n";
 
-            mail("onojuvwevwog@gmail.com", "message from git-profile", $message, $headers);
+            mail("gtdevsolutions@gmail.com","git-project", $message, $headers);
             header("location: ../index.html?msg=success?");
 
           }

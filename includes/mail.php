@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 if(isset($_POST['submit'])){
-    if(empty($name) || empty($email) || empty($subject) || empty($message)){
+    if(empty($name) || empty($email) || empty($message)){
         header("location : ../index.html");
         exit();
     }else{

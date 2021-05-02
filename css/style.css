@@ -99,10 +99,9 @@ a:hover {
 body {
 	text-align: center;
 	font-family: 'Montserrat Alternates', sans-serif;
-	background-color: #e3e3e36b;
 }
 section {
-	padding: 50px 0;
+	padding: 30px 0;
 }
 /* INTRO_SECTION */
 
@@ -141,8 +140,13 @@ header h3 {
 	margin: 0;
 }
 h1 {
-	font-size: 1.8rem !important;
+	font-size: 1.8rem;
 	font-weight: 500;
+}
+@media (max-width: 765px) {
+	h1{
+		font-size: 20px;
+	}
 }
 h3 {
 	font-size: 1rem;
@@ -215,6 +219,9 @@ nav ul li a:hover {
 	color: #fff;
 	margin-left: auto;
 }
+.navbar-toggler:focus {
+	outline: none !important;
+}
 
 /* ABOUT SECTION  */
 .about-header {
@@ -229,7 +236,7 @@ nav ul li a:hover {
 .about-icon {
 	margin: 0;
 	font-size: 50px;
-	color: #1f3f72;
+	color: #242b91;
 	padding: 10px;
 }
 .about-container-two {

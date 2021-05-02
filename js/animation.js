@@ -32,7 +32,9 @@ $(document).ready(function() {
 preloaderFadeOutTime = 3000;
 function hidePreloader() {
 var preloader = $('#preloader');
-    setTimeOut(preloader.fadeOut(preloaderFadeOutTime), 3000);
+    setTimeOut(()=> {
+        preloader.fadeOut(preloaderFadeOutTime)
+    }, 3000);
 }
 hidePreloader();
 });

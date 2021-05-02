@@ -109,7 +109,7 @@ header .intro-container {
 	background-image: url("./../images/banner.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-attachment: fixed;
 	height: 80vh;
 }
